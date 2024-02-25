@@ -17,6 +17,21 @@ M.general = {
         require("hover").hover_select()
       end,
       "Hover info (selected)"},
+
+    -- obsidian.nvim
+    ["gf"] = {
+      function()
+        return require("obsidian").util.gf_passthrough()
+      end,
+      opts = { noremap = false, expr = true, buffer = true },
+    },
+    -- Toggle check-boxes.
+    ["<leader>ch"] = {
+      function()
+        return require("obsidian").util.toggle_checkbox()
+      end,
+      opts = { buffer = true },
+    },
   },
   v = {
     [">"] = { ">gv", "indent"},
