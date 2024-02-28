@@ -24,7 +24,7 @@ local plugins = {
       workspaces = {
         {
           name = "notes",
-          path = "~/Documents/notes",
+          path = "~/Documents/Notes",
         },
 
       },
